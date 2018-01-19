@@ -1,0 +1,22 @@
+body {
+	background-color: #d1efc9;
+}
+			
+h1 {
+	font-family: 'Hind Siliguri', sans-serif;
+	color: #333;
+	padding: 1%;
+}
+			
+p {
+	font-family: 'Raleway', serif;
+	color: #888;
+	padding: 1%;
+	margin: 0 0 0 10%;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	margin: 1%;
+}
