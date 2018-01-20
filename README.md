@@ -1,3 +1,5 @@
 # liphenste.github.io
-We're back online, folks!
-WIP
+
+Source code for my personal site, https://liphenste.github.io/
+
+The first site I've made, built with HTML/CSS and Bootstrap. :monkey_face:
