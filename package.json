@@ -1,5 +1,6 @@
 {
   "name": "liphenste-react",
+  "homepage": "https://liphenste.github.com/react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
