@@ -1,0 +1,12 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  color: #465d7a;
+  background-color: #767e86;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

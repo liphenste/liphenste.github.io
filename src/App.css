@@ -1,0 +1,59 @@
+.section {
+  height: 100%;
+  margin: 0px auto;
+  padding: 1em;
+  overflow: hidden;
+
+}
+
+.sectionheader {
+  vertical-align: middle;
+  color: #686b70;
+  font-size: 4em;
+
+}
+
+.Header {
+  text-align: center;
+  background-color: #1b2633;
+  color: #c1cbd6;
+}
+
+.name {
+
+}
+
+.tagline {
+
+}
+
+.greeting {
+
+}
+
+.About {
+  text-align: center;
+  background-color: #dae5f2;
+}
+
+.description {
+
+}
+
+.Project {
+  text-align: center;
+}
+
+.title {
+
+}
+
+.Projects {
+  text-align: center;
+  background-color: #c1cbd6;
+}
+
+.Contact {
+  text-align: center;
+  background-color: #9ea9b4;
+}
