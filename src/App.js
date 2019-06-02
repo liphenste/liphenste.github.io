@@ -6,8 +6,8 @@ function Header(props) {
   return (
     <div className="Header section container-fluid">
       <div className="row d-flex align-items-center">
-        <h2 className="sectionheader col-4">'hello':</h2>
-        <div className="col-8">
+        <h2 className="sectionheader col-3">'hello':</h2>
+        <div className="col-9">
           <h1 className="name">stephen li.</h1>
           <p className="tagline tagline1">software developer.</p>
           <p className="tagline tagline2">uwaterloo cs '22.</p>
@@ -22,12 +22,11 @@ function About(props) {
   return (
     <div className="About section container-fluid">
       <div className="row d-flex align-items-center">
-        <h2 className="sectionheader col-4">'about':</h2>
-        <div className="col-8">
+        <h2 className="sectionheader col-3">'about':</h2>
+        <div className="col-9">
           <p className="description">
           Stephen Li is studying Computer Science at the University of Waterloo. Inquisitive at heart, he is captivated by our evolving technological era that speaks the language of computers.
           He is constantly on the search for new solutions, in hopes of making his own contribution to the world.
-          When not on his coding assignments, you can find Stephen problem-solving through his online chess/poker games and enjoying aesthetic pictures of cats.
           </p>
         </div>
       </div>
@@ -50,8 +49,8 @@ function Projects(props) {
   return (
     <div className="Projects section container-fluid">
       <div className="row d-flex align-items-center">
-        <h2 className="sectionheader col-4">'projects':</h2>
-        <div className="col-8">
+        <h2 className="sectionheader col-3">'projects':</h2>
+        <div className="col-9">
           <Project title="cli_chess" description={cliChessDescription} />
           <Project title="bpm-calculator" description={bpmCalcDescription} />
         </div>
@@ -64,9 +63,14 @@ function Contact(props) {
   return (
     <div className="Contact section container-fluid">
       <div className="row d-flex align-items-center">
-      <h2 className="sectionheader col-4">'contact':</h2>
-        <div className="col-8">
-          <p className="description">find me at <a href="mailto:liphenste@gmail.com">liphenste@gmail.com</a>.</p>
+      <h2 className="sectionheader col-3">'contact':</h2>
+        <div className="col-9">
+          <p className="description">come say hi!</p>
+          <div className="socialmedia">
+            <a className="icon" href="mailto:liphenste@gmail.com"><i className="far fa-envelope"></i></a>
+            <a className="icon" href="https://www.linkedin.com/in/liphenste"><i className="fab fa-linkedin"></i></a>
+            <a className="icon" href="https://github.com/liphenste"><i className="fab fa-github"></i></a>
+          </div>
         </div>
       </div>
     </div>
