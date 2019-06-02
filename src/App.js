@@ -39,7 +39,9 @@ function Project(props) {
   return (
     <div className="Project">
       <h3 className="title">
-        <a href={props.link}>{props.title} <i className="fab fa-github"></i></a>
+        <a href={props.link} target="_blank" rel="noopener noreferrer">
+          {props.title} <i className="fab fa-github"></i>
+        </a>
       </h3>
       <p className="description">{props.description}</p>
       <img src={props.demo} alt={props.demoAlt}></img>
@@ -78,9 +80,24 @@ function Contact(props) {
         <div className="col-9">
           <p className="description">come say hi!</p>
           <div className="socialmedia">
-            <a className="icon" href="mailto:liphenste@gmail.com"><i className="far fa-envelope"></i></a>
-            <a className="icon" href="https://www.linkedin.com/in/liphenste"><i className="fab fa-linkedin"></i></a>
-            <a className="icon" href="https://github.com/liphenste"><i className="fab fa-github"></i></a>
+            <a className="icon"
+               href="mailto:liphenste@gmail.com"
+               target="_blank"
+               rel="noopener noreferrer">
+                 <i className="far fa-envelope"></i>
+            </a>
+            <a className="icon"
+               href="https://www.linkedin.com/in/liphenste"
+               target="_blank"
+               rel="noopener noreferrer">
+                 <i className="fab fa-linkedin"></i>
+            </a>
+            <a className="icon"
+               href="https://github.com/liphenste"
+               target="_blank"
+               rel="noopener noreferrer">
+                 <i className="fab fa-github"></i>
+            </a>
           </div>
         </div>
       </div>
