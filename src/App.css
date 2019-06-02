@@ -42,10 +42,15 @@
 
 .Project {
   text-align: center;
+  padding: 1em;
 }
 
 .title {
 
+}
+
+a {
+  color: #4978b6;
 }
 
 .Projects {
@@ -64,5 +69,4 @@
 
 .icon {
   padding: 0.2em;
-  color: #465d7a;
 }

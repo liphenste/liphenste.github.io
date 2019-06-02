@@ -1,5 +1,6 @@
 import React from 'react';
 import { HashRouter, Route, Link } from "react-router-dom";
+import chess_cli_demo from './img/chess_cli_demo.gif'
 import './App.css';
 
 function Header(props) {
@@ -37,8 +38,11 @@ function About(props) {
 function Project(props) {
   return (
     <div className="Project">
-      <h3 className="title">{props.title}</h3>
+      <h3 className="title">
+        <a href={props.link}>{props.title} <i className="fab fa-github"></i></a>
+      </h3>
       <p className="description">{props.description}</p>
+      <img src={props.demo} alt={props.demoAlt}></img>
     </div>
   );
 }
@@ -51,8 +55,15 @@ function Projects(props) {
       <div className="row d-flex align-items-center">
         <h2 className="sectionheader col-3">'projects':</h2>
         <div className="col-9">
-          <Project title="cli_chess" description={cliChessDescription} />
-          <Project title="bpm-calculator" description={bpmCalcDescription} />
+          <Project title="cli_chess"
+                   link="https://github.com/liphenste/chess_cli"
+                   description={cliChessDescription}
+                   demo={chess_cli_demo}
+                   demoAlt="Chess CLI Demo"
+          />
+          <Project title="bpm-calculator"
+                   link="https://github.com/liphenste/bpm-calculator"
+                   description={bpmCalcDescription} />
         </div>
       </div>
     </div>
