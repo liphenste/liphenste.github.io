@@ -6,4 +6,4 @@ My site, powered with React. (create-react-app)
 - [ ] state-based pageload animations
 - [x] social media icons
 - [x] restructure 'projects', add images + github links
-- [ ] navbar
+- [x] navbar
