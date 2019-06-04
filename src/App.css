@@ -1,9 +1,17 @@
+.navbar {
+  opacity: 0.3;
+  transition: opacity 0.25s;
+}
+
+.navbar:hover {
+  opacity: 0.9;
+}
+
 .section {
   height: 100%;
   margin: 0px auto;
   padding: 1em;
   overflow: hidden;
-
 }
 
 .sectionheader {
@@ -15,8 +23,8 @@
 
 .Header {
   text-align: center;
-  background-color: #1b2633;
   color: #c1cbd6;
+  background-image: linear-gradient(#31445c, #1b2633);
 }
 
 .name {

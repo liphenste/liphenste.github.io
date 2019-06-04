@@ -11,18 +11,18 @@ function Navbar(props) {
       </button>
 
       <div class="collapse navbar-collapse" id="navbarContents">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#hello">home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">about</a>
+            <a class="nav-link" href="#about">about</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">projects</a>
+            <a class="nav-link" href="#projects">projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">contact</a>
+            <a class="nav-link" href="#contact">contact</a>
           </li>
         </ul>
       </div>
@@ -32,7 +32,7 @@ function Navbar(props) {
 
 function Header(props) {
   return (
-    <div className="Header section container-fluid">
+    <div className="Header section container-fluid" id="hello">
       <div className="row d-flex align-items-center">
         <h2 className="sectionheader col-3">'hello':</h2>
         <div className="col-9">
@@ -48,7 +48,7 @@ function Header(props) {
 
 function About(props) {
   return (
-    <div className="About section container-fluid">
+    <div className="About section container-fluid" id="about">
       <div className="row d-flex align-items-center">
         <h2 className="sectionheader col-3">'about':</h2>
         <div className="col-9">
@@ -80,18 +80,18 @@ function Projects(props) {
   const cliChessDescription = "a lightweight command-line based chess interface for personal use"
   const bpmCalcDescription = "angularjs widget that calculates bpm based on rate of user input"
   return (
-    <div className="Projects section container-fluid">
+    <div className="Projects section container-fluid" id="projects">
       <div className="row d-flex align-items-center">
         <h2 className="sectionheader col-3">'projects':</h2>
         <div className="col-9">
           <Project title="cli_chess"
-                   link="https://github.com/liphenste/chess_cli"
+                   link="https://github.com/liphenste/chess_cli/"
                    description={cliChessDescription}
                    demo={chess_cli_demo}
                    demoAlt="Chess CLI Demo"
           />
           <Project title="bpm-calculator"
-                   link="https://github.com/liphenste/bpm-calculator"
+                   link="https://github.com/liphenste/bpm-calculator/"
                    description={bpmCalcDescription} />
         </div>
       </div>
@@ -101,7 +101,7 @@ function Projects(props) {
 
 function Contact(props) {
   return (
-    <div className="Contact section container-fluid">
+    <div className="Contact section container-fluid" id="contact">
       <div className="row d-flex align-items-center">
       <h2 className="sectionheader col-3">'contact':</h2>
         <div className="col-9">
@@ -114,13 +114,13 @@ function Contact(props) {
                  <i className="far fa-envelope"></i>
             </a>
             <a className="icon"
-               href="https://www.linkedin.com/in/liphenste"
+               href="https://www.linkedin.com/in/liphenste/"
                target="_blank"
                rel="noopener noreferrer">
                  <i className="fab fa-linkedin"></i>
             </a>
             <a className="icon"
-               href="https://github.com/liphenste"
+               href="https://github.com/liphenste/"
                target="_blank"
                rel="noopener noreferrer">
                  <i className="fab fa-github"></i>
