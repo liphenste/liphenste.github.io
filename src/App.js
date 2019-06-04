@@ -3,6 +3,33 @@ import { HashRouter, Route, Link } from "react-router-dom";
 import chess_cli_demo from './img/chess_cli_demo.gif'
 import './App.css';
 
+function Navbar(props) {
+  return (
+    <nav class="navbar sticky-top navbar-expand navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContents" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContents">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
+}
+
 function Header(props) {
   return (
     <div className="Header section container-fluid">
@@ -109,6 +136,7 @@ function Contact(props) {
 function App() {
   return (
     <div>
+      <Navbar />
       <Header />
       <About />
       <Projects />
