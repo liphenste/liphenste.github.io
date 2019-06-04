@@ -12,7 +12,7 @@ function Navbar(props) {
 
       <div class="collapse navbar-collapse" id="navbarContents">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="#hello">home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
