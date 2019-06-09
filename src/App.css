@@ -28,17 +28,23 @@
 }
 
 .name {
-  font-size: 5em;
+  font-size: 5.5em;
+  font-weight: bolder;
+  text-shadow: -3px 3px rgb(119, 49, 167);
 }
 
 .tagline {
   font-size: 2em;
   display: inline-block;
+  color: #a8b4c0;
   margin: 0 1em;
 }
 
 .greeting {
+  font-weight: bolder;
   font-size: 2.5em;
+  color: #e2f1ff;
+  margin-top: 0.8em;
 }
 
 .About {
@@ -48,6 +54,7 @@
 
 .description {
   font-size: 1.5em;
+  line-height: 2;
 }
 
 .Project {
@@ -56,7 +63,7 @@
 }
 
 .title {
-
+  font-size: 2.5em;
 }
 
 a {
@@ -78,7 +85,7 @@ a {
 }
 
 .icon {
-  padding: 0.2em;
+  padding: 0.4em;
 }
 
 /* The following animations are adapted form https://daneden.github.io/animate.css/ */
