@@ -47,6 +47,11 @@
   margin-top: 0.8em;
 }
 
+.smiley {
+  color: #f8fa8b;
+  margin: 0.5em;
+}
+
 .About {
   text-align: center;
   background-color: #dae5f2;
@@ -55,6 +60,17 @@
 .description {
   font-size: 1.5em;
   line-height: 2;
+}
+
+.hobbies {
+  font-weight: bolder;
+}
+
+.hobbieslist {
+  font-size: 10em;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .Project {
@@ -68,6 +84,11 @@
 
 a {
   color: #4978b6;
+}
+
+.cliChessGif {
+  width: 70%;
+  height: auto;
 }
 
 .Projects {
@@ -85,7 +106,12 @@ a {
 }
 
 .icon {
-  padding: 0.4em;
+  display: inline-block;
+  margin: 0 0.3em;
+  transition: transform .2s;
+}
+.icon:hover {
+  transform: scale(1.2);
 }
 
 /* The following animations are adapted form https://daneden.github.io/animate.css/ */
@@ -275,4 +301,13 @@ a {
   animation-fill-mode: forwards;
   animation-duration: 1.5s;
   animation-delay: 1.5s;
+}
+
+.fadeInLater {
+  opacity: 0;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation-fill-mode: forwards;
+  animation-duration: 1.5s;
+  animation-delay: 2.5s;
 }

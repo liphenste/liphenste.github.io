@@ -39,7 +39,9 @@ function Header(props) {
           <h1 className="name zoomInUp">stephen li.</h1>
           <p className="tagline tagline1 zoomInLeft">software developer.</p>
           <p className="tagline tagline2 zoomInRight">uwaterloo cs '22.</p>
-          <p className="greeting fadeIn">welcome to my home.</p>
+          <p className="greeting fadeIn">welcome to my home.
+            <span role="img" aria-label="yo!" className="smiley fadeInLater">✌</span>
+          </p>
         </div>
       </div>
     </div>
@@ -56,7 +58,14 @@ function About(props) {
           Stephen Li is studying Computer Science at the University of Waterloo. Inquisitive at heart, he is captivated by our evolving technological era that speaks the language of computers.
           He is constantly on the search for new solutions, in hopes of making his own contribution to the world.
           </p>
-          <p className="description hobbies">Some hobbies I enjoy:</p>
+          <div className="hobbies">
+            <p className="description">Some hobbies I enjoy:</p>
+            <ul className="hobbieslist">
+              <li className="icon"><i className="fas fa-chess"></i></li>
+              <li className="icon"><i className="fas fa-basketball-ball"></i></li>
+              <li className="icon"><i className="fas fa-biking"></i></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -72,7 +81,7 @@ function Project(props) {
         </a>
       </h3>
       <p className="description">{props.description}</p>
-      <img src={props.demo} alt={props.demoAlt}></img>
+      <img className={props.demoName} src={props.demo} alt={props.demoAlt}></img>
     </div>
   );
 }
@@ -88,6 +97,7 @@ function Projects(props) {
           <Project title="cli_chess"
                    link="https://github.com/liphenste/chess_cli/"
                    description={cliChessDescription}
+                   demoName="cliChessGif"
                    demo={chess_cli_demo}
                    demoAlt="Chess CLI Demo"
           />
