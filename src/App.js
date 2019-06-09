@@ -36,10 +36,10 @@ function Header(props) {
       <div className="row d-flex align-items-center">
         <h2 className="sectionheader col-3">'hello':</h2>
         <div className="col-9">
-          <h1 className="name">stephen li.</h1>
-          <p className="tagline tagline1">software developer.</p>
-          <p className="tagline tagline2">uwaterloo cs '22.</p>
-          <p className="greeting">welcome to my home.</p>
+          <h1 className="name zoomInUp">stephen li.</h1>
+          <p className="tagline tagline1 zoomInLeft">software developer.</p>
+          <p className="tagline tagline2 zoomInRight">uwaterloo cs '22.</p>
+          <p className="greeting fadeIn">welcome to my home.</p>
         </div>
       </div>
     </div>
@@ -56,6 +56,7 @@ function About(props) {
           Stephen Li is studying Computer Science at the University of Waterloo. Inquisitive at heart, he is captivated by our evolving technological era that speaks the language of computers.
           He is constantly on the search for new solutions, in hopes of making his own contribution to the world.
           </p>
+          <p className="description hobbies">Some hobbies I enjoy:</p>
         </div>
       </div>
     </div>
@@ -105,7 +106,7 @@ function Contact(props) {
       <div className="row d-flex align-items-center">
       <h2 className="sectionheader col-3">'contact':</h2>
         <div className="col-9">
-          <p className="description">come say hi!</p>
+          <p className="description">come drop in:</p>
           <div className="socialmedia">
             <a className="icon"
                href="mailto:liphenste@gmail.com"
