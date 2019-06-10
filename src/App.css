@@ -21,6 +21,10 @@
   opacity: 0.6;
 }
 
+.sectioncontent {
+  margin: 1em 0;
+}
+
 .Header {
   text-align: center;
   color: #c1cbd6;
