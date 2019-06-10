@@ -92,8 +92,8 @@ function Projects(props) {
   return (
     <div className="Projects section container-fluid" id="projects">
       <div className="row d-flex align-items-center">
-        <h2 className="sectionheader col-3">'projects':</h2>
-        <div className="col-9">
+        <h2 className="sectionheader col-lg-3 col-md-12">'projects':</h2>
+        <div className="col-lg-9 col-md-12">
           <Project title="cli_chess"
                    link="https://github.com/liphenste/chess_cli/"
                    description={cliChessDescription}
