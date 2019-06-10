@@ -15,10 +15,15 @@
 }
 
 .sectionheader {
+  display: none;
   vertical-align: middle;
   color: #686b70;
   font-size: 4em;
   opacity: 0.6;
+}
+
+.sectioncontent {
+  display: none;
 }
 
 .Header {
