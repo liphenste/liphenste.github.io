@@ -35,8 +35,8 @@ function Header(props) {
   return (
     <div className="Header section container-fluid" id="hello">
       <div className="row d-flex align-items-center">
-        <h2 className="sectionheader">'hello':</h2>
-        <div className="sectioncontent">
+        <h2 className="sectionheader col-lg-3 col-md-12">'hello':</h2>
+        <div className="sectioncontent col-lg-9 col-md-12">
           <h1 className="name zoomInUp">stephen li.</h1>
           <p className="tagline tagline1 zoomInLeft">software developer.</p>
           <p className="tagline tagline2 zoomInRight">uwaterloo cs '22.</p>
@@ -53,8 +53,8 @@ function About(props) {
   return (
     <div className="About section container-fluid" id="about">
       <div className="row d-flex align-items-center">
-        <h2 className="sectionheader">'about':</h2>
-        <div className="sectioncontent">
+        <h2 className="sectionheader col-lg-3 col-md-12">'about':</h2>
+        <div className="sectioncontent col-lg-9 col-md-12">
           <p className="description">
           Stephen Li is studying Computer Science at the University of Waterloo. Inquisitive at heart, he is captivated by our evolving technological era that speaks the language of computers.
           He is constantly on the search for new solutions, in hopes of making his own contribution to the world.
@@ -93,8 +93,8 @@ function Projects(props) {
   return (
     <div className="Projects section container-fluid" id="projects">
       <div className="row d-flex align-items-center">
-        <h2 className="sectionheader">'projects':</h2>
-        <div className="sectioncontent">
+        <h2 className="sectionheader col-lg-3 col-md-12">'projects':</h2>
+        <div className="sectioncontent col-lg-9 col-md-12">
           <Project title="cli_chess"
                    link="https://github.com/liphenste/chess_cli/"
                    description={cliChessDescription}
@@ -115,8 +115,8 @@ function Contact(props) {
   return (
     <div className="Contact section container-fluid" id="contact">
       <div className="row d-flex align-items-center">
-      <h2 className="sectionheader">'contact':</h2>
-        <div className="sectioncontent">
+      <h2 className="sectionheader col-lg-3 col-md-12">'contact':</h2>
+        <div className="sectioncontent col-lg-9 col-md-12">
           <p className="description">come drop in:</p>
           <div className="socialmedia">
             <a className="icon"
@@ -146,11 +146,6 @@ function Contact(props) {
 
 
 function App() {
-  useEffect(() => { // apply bootstrap grid layout and show once, after the first render
-    $(".sectionheader").addClass("col-lg-3 col-md-12").show();
-    $(".sectioncontent").addClass("col-lg-9 col-md-12").show();
-  }, []);
-
   return (
     <div>
       <Navbar />
