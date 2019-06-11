@@ -119,14 +119,14 @@ a {
 }
 
 @media (max-width: 600px) {
-  .sectionheader { font-size: 2em; }
-  .name { font-size: 2.5em; }
+  .sectionheader { font-size: 2.2em; }
+  .name { font-size: 2.8em; }
   .tagline { font-size: 1.2em; }
   .greeting { font-size: 1.5em; }
   .description { font-size: 1em; }
-  .hobbieslist { font-size: 2.5em; }
-  .title { font-size: 2em; }
-  .cliChessGif { width: 225px; height: auto; }
+  .hobbieslist { font-size: 3em; }
+  .title { font-size: 1.7em; }
+  .cliChessGif { width: 250px; height: auto; }
 }
 
 /* The following animations are adapted form https://daneden.github.io/animate.css/ */
