@@ -118,6 +118,17 @@ a {
   transform: scale(1.2);
 }
 
+@media (max-width: 600px) {
+  .sectionheader { font-size: 3em; }
+  .name { font-size: 4em; }
+  .tagline { font-size: 1.75em; }
+  .greeting { font-size: 2em; }
+  .description { font-size: 1em; }
+  .hobbieslist { font-size: 4em; }
+  .title { font-size: 2em; }
+  .cliChessGif { width: 350px; height: auto; }
+}
+
 /* The following animations are adapted form https://daneden.github.io/animate.css/ */
 @-webkit-keyframes zoomInLeft {
   from {
