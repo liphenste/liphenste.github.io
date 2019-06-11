@@ -11,5 +11,5 @@ My site, powered with React. (create-react-app)
 - [x] add hobbies section
 - [x] code style?
 - [ ] do something with lifting STATE
-- [ ] mobile support
+- [x] mobile support
 - [ ] more stuff because there's little actual content
