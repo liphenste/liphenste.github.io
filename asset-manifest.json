@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react/static/css/main.cc95e986.chunk.css",
+    "main.css": "/react/static/css/main.62208ed4.chunk.css",
     "main.js": "/react/static/js/main.f63a7791.chunk.js",
     "main.js.map": "/react/static/js/main.f63a7791.chunk.js.map",
     "runtime~main.js": "/react/static/js/runtime~main.bb50a20d.js",
@@ -8,9 +8,9 @@
     "static/js/2.0055d7f9.chunk.js": "/react/static/js/2.0055d7f9.chunk.js",
     "static/js/2.0055d7f9.chunk.js.map": "/react/static/js/2.0055d7f9.chunk.js.map",
     "index.html": "/react/index.html",
-    "precache-manifest.fbb8b16e2784bdb89385c777bf62db98.js": "/react/precache-manifest.fbb8b16e2784bdb89385c777bf62db98.js",
+    "precache-manifest.7179ba8160b8997ca3ece5a624f1630b.js": "/react/precache-manifest.7179ba8160b8997ca3ece5a624f1630b.js",
     "service-worker.js": "/react/service-worker.js",
-    "static/css/main.cc95e986.chunk.css.map": "/react/static/css/main.cc95e986.chunk.css.map",
+    "static/css/main.62208ed4.chunk.css.map": "/react/static/css/main.62208ed4.chunk.css.map",
     "static/media/chess_cli_demo.gif": "/react/static/media/chess_cli_demo.a1179c1f.gif"
   }
 }
