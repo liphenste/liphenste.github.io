@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { HashRouter, Route, Link } from "react-router-dom";
 import chess_cli_demo from './img/chess_cli_demo.gif';
+import bpm_calculator_demo from './img/bpm_calculator_demo.gif';
 import $ from 'jquery';
 import './App.css';
 
@@ -104,7 +105,11 @@ function Projects(props) {
           />
           <Project title="bpm-calculator"
                    link="https://github.com/liphenste/bpm-calculator/"
-                   description={bpmCalcDescription} />
+                   description={bpmCalcDescription}
+                   demoName="bpmCalculatorGif"
+                   demo={bpm_calculator_demo}
+                   demoAlt="BPM Calculator Demo"
+          />     
         </div>
       </div>
     </div>
