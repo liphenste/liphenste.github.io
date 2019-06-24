@@ -83,7 +83,7 @@ function Project(props) {
         </a>
       </h3>
       <p className="description">{props.description}</p>
-      <img className={props.demoName} src={props.demo} alt={props.demoAlt}></img>
+      <img className={`demo ${props.demoName}`} src={props.demo} alt={props.demoAlt}></img>
     </div>
   );
 }

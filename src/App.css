@@ -90,9 +90,12 @@ a {
   color: #4978b6;
 }
 
-.cliChessGif {
-  width: 70%;
+.demo {
+  width: 60%;
   height: auto;
+  border: 2px dashed #465d7a;
+  border-radius: 2%;
+  
 }
 
 .Projects {
