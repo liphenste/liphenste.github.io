@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react/static/css/main.50f2922f.chunk.css",
-    "main.js": "/react/static/js/main.ee8fceb1.chunk.js",
-    "main.js.map": "/react/static/js/main.ee8fceb1.chunk.js.map",
+    "main.css": "/react/static/css/main.a20ce48d.chunk.css",
+    "main.js": "/react/static/js/main.d90fa545.chunk.js",
+    "main.js.map": "/react/static/js/main.d90fa545.chunk.js.map",
     "runtime~main.js": "/react/static/js/runtime~main.bb50a20d.js",
     "runtime~main.js.map": "/react/static/js/runtime~main.bb50a20d.js.map",
     "static/js/2.b6b00e3f.chunk.js": "/react/static/js/2.b6b00e3f.chunk.js",
     "static/js/2.b6b00e3f.chunk.js.map": "/react/static/js/2.b6b00e3f.chunk.js.map",
     "index.html": "/react/index.html",
-    "precache-manifest.4990370880425373cbc074bb588d5126.js": "/react/precache-manifest.4990370880425373cbc074bb588d5126.js",
+    "precache-manifest.5640d371150b9afc6b3170167b7e0cb0.js": "/react/precache-manifest.5640d371150b9afc6b3170167b7e0cb0.js",
     "service-worker.js": "/react/service-worker.js",
-    "static/css/main.50f2922f.chunk.css.map": "/react/static/css/main.50f2922f.chunk.css.map",
+    "static/css/main.a20ce48d.chunk.css.map": "/react/static/css/main.a20ce48d.chunk.css.map",
     "static/media/bpm_calculator_demo.gif": "/react/static/media/bpm_calculator_demo.1f54d248.gif",
     "static/media/chess_cli_demo.gif": "/react/static/media/chess_cli_demo.a1179c1f.gif"
   }
