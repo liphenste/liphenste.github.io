@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5da74dbf3d52a5e8da9aa49f62657985",
+    "revision": "12a7f83c70749edaa3642f595d8e9bd3",
     "url": "/react/index.html"
   },
   {
-    "revision": "407c95c638e740908e02",
-    "url": "/react/static/css/main.a20ce48d.chunk.css"
+    "revision": "d6bb0b37adff2be537e1",
+    "url": "/react/static/css/main.d39fa01e.chunk.css"
   },
   {
-    "revision": "c7b9663b82f616223da8",
-    "url": "/react/static/js/2.b6b00e3f.chunk.js"
+    "revision": "05e72611c9eebb72abcb",
+    "url": "/react/static/js/2.c0217048.chunk.js"
   },
   {
-    "revision": "407c95c638e740908e02",
-    "url": "/react/static/js/main.d90fa545.chunk.js"
+    "revision": "d6bb0b37adff2be537e1",
+    "url": "/react/static/js/main.37280e5d.chunk.js"
   },
   {
     "revision": "4e6a4b677d1c1e6ba359",
@@ -26,5 +26,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a1179c1fec5b77a5b2123cb0b8d52a33",
     "url": "/react/static/media/chess_cli_demo.a1179c1f.gif"
+  },
+  {
+    "revision": "7adade1e10423b5fe48679647fddb551",
+    "url": "/react/static/media/neuroblot_logo.7adade1e.png"
   }
 ]);
