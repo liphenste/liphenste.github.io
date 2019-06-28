@@ -2,8 +2,11 @@ import React, { useEffect } from 'react';
 import { HashRouter, Route, Link } from "react-router-dom";
 import chess_cli_demo from './img/chess_cli_demo.gif';
 import bpm_calculator_demo from './img/bpm_calculator_demo.gif';
+import syngli_logo from './img/syngli_logo.png';
+import neuroblot_logo from './img/neuroblot_logo.png';
 import $ from 'jquery';
 import './App.css';
+
 
 function Navbar(props) {
   return (
@@ -32,6 +35,7 @@ function Navbar(props) {
   );
 }
 
+
 function Header(props) {
   return (
     <div className="Header section container-fluid" id="hello">
@@ -50,6 +54,7 @@ function Header(props) {
   );
 }
 
+
 function About(props) {
   return (
     <div className="About section container-fluid" id="about">
@@ -57,13 +62,13 @@ function About(props) {
         <h2 className="sectionheader col-lg-3 col-md-12">'about':</h2>
         <div className="sectioncontent col-lg-9 col-md-12">
           <p className="description">
-            <strong>I'm a problem solver to the core.</strong> From optimizing runtime efficieny on LeetCode problems,
+            <b>I'm a problem solver to the core.</b> From optimizing runtime efficieny on LeetCode problems,
             to solving daily chess puzzles, to organizing the clothes in my room--I solve problems
             in every aspect of my life, and I'm basking in every minute of it.
           </p>
           <p className="description">
             I'm a 2nd year Computer Science student at the University of Waterloo, and am
-            currently looking for <strong> Fall 2019 software development internship opportunities.</strong>
+            currently looking for <b> Fall 2019 software development internship opportunities.</b>
           </p>
           <div className="hobbies" id="hobbies">
             <p className="description">Some hobbies I enjoy:</p>
@@ -79,6 +84,53 @@ function About(props) {
   );
 }
 
+
+function Internship(props) {
+  return (
+    <div className="Internship">
+      <a href={props.link} target="_blank" rel="noopener noreferrer">
+        <img className="companylogo" src={props.logo} alt={props.alt}></img>
+      </a>
+      {props.description}
+    </div>
+  )
+}
+
+
+function Experience(props) {
+  const syngliDescription =
+    <div className="description">
+      Node.js, Express.js, jQuery, PHP, MySQL
+    </div>;
+  const neuroblotDescription =
+    <div className="description">
+      iOS, Objective-C, Firebase
+    </div>;
+
+  return (
+    <div className="Experience section container-fluid" id="experience">
+      <div className="row d-flex align-items-center">
+        <h2 className="sectionheader col-lg-3 col-md-12">'experience':</h2>
+        <div className="sectioncontent col-lg-9 col-md-12">
+          <Internship title="Syngli"
+                      link="https://syngli.com/"
+                      logo={syngli_logo}
+                      alt="Syngli Logo"
+                      description={syngliDescription}
+          />
+          <Internship title="NeuroBlot"
+                      link="http://neuroblot.com/"
+                      logo={neuroblot_logo}
+                      alt="NeuroBlot Logo"
+                      description={neuroblotDescription}
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
 function Project(props) {
   return (
     <div className="Project">
@@ -93,9 +145,10 @@ function Project(props) {
   );
 }
 
+
 function Projects(props) {
-  const cliChessDescription = "a lightweight command-line based chess interface for personal use"
-  const bpmCalcDescription = "angularjs widget that calculates bpm based on rate of user input"
+  const cliChessDescription = "a lightweight C++ command-line based chess interface for personal use"
+  const bpmCalcDescription = "angularJS widget that calculates bpm based on rate of user input"
   return (
     <div className="Projects section container-fluid" id="projects">
       <div className="row d-flex align-items-center">
@@ -120,6 +173,7 @@ function Projects(props) {
     </div>
   );
 }
+
 
 function Contact(props) {
   return (
@@ -155,14 +209,23 @@ function Contact(props) {
 }
 
 
+function Footer(props) {
+  return (
+    <div className="footer" id="footer">© 2019 Stephen Li</div>
+  );
+}
+
+
 function App() {
   return (
     <div>
       <Navbar />
       <Header />
       <About />
+      <Experience />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   );  
 }

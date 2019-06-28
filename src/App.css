@@ -78,6 +78,32 @@
   padding: 0;
 }
 
+.Experience {
+  background-color: #ccdae9;
+  text-align: center;
+}
+
+.Internship {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+.companylogo {
+  display: inline-block;
+  height: 40px;
+  opacity: 0.8;
+}
+
+.companylogo:hover {
+  opacity: 1;
+}
+
+#experience .description {
+  font-size: 1.1em;
+  margin: 8px;
+  margin-top: 20px;
+}
+
 .Project {
   text-align: center;
   padding: 1em;
@@ -111,6 +137,10 @@ a {
 
 .socialmedia {
   font-size: 3em;
+}
+
+.footer {
+  background-color: #9ea9b4;
 }
 
 .icon {
