@@ -66,8 +66,9 @@
   line-height: 2;
 }
 
-.hobbies {
+#hobbies .description {
   font-weight: bolder;
+  font-size: 2em;
 }
 
 .hobbieslist {

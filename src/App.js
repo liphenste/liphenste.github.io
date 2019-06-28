@@ -57,10 +57,15 @@ function About(props) {
         <h2 className="sectionheader col-lg-3 col-md-12">'about':</h2>
         <div className="sectioncontent col-lg-9 col-md-12">
           <p className="description">
-          Stephen Li is studying Computer Science at the University of Waterloo. Inquisitive at heart, he is captivated by our evolving technological era that speaks the language of computers.
-          He is constantly on the search for new solutions, in hopes of making his own contribution to the world.
+            <strong>I'm a problem solver to the core.</strong> From optimizing runtime efficieny on LeetCode problems,
+            to solving daily chess puzzles, to organizing the clothes in my room--I solve problems
+            in every aspect of my life, and I'm basking in every minute of it.
           </p>
-          <div className="hobbies">
+          <p className="description">
+            I'm a 2nd year Computer Science student at the University of Waterloo, and am
+            currently looking for <strong> Fall 2019 software development internship opportunities.</strong>
+          </p>
+          <div className="hobbies" id="hobbies">
             <p className="description">Some hobbies I enjoy:</p>
             <ul className="hobbieslist">
               <li className="icon"><i className="fas fa-chess"></i></li>
@@ -81,7 +86,7 @@ function Project(props) {
         <a href={props.link} target="_blank" rel="noopener noreferrer">
           {props.title} <i className="fab fa-github"></i>
         </a>
-      </h3>
+      </h3> 
       <p className="description">{props.description}</p>
       <img className={`demo ${props.demoName}`} src={props.demo} alt={props.demoAlt}></img>
     </div>
