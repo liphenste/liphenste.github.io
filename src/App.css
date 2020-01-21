@@ -17,7 +17,7 @@
 .sectionheader {
   vertical-align: middle;
   color: #686b70;
-  font-size: 4em;
+  font-size: 4vw;
   opacity: 0.6;
 }
 
@@ -57,12 +57,12 @@
 }
 
 .About {
-  text-align: center;
+  text-align: left;
   background-color: #dae5f2;
 }
 
 .description {
-  font-size: 1.5em;
+  font-size: 1.2em;
   line-height: 2;
 }
 
@@ -80,22 +80,40 @@
 
 .Experience {
   background-color: #ccdae9;
-  text-align: center;
+  text-align: left;
 }
 
 .Internship {
   display: inline-block;
-  margin: 0 30px;
+  margin: 10px 30px;
+}
+
+.Internship .date {
+  display: inline-block;
+  color: #8da9ce;
+  font-size: 2em;
+  margin: 0 20px;
 }
 
 .companylogo {
   display: inline-block;
-  height: 40px;
+  height: 50px;
   opacity: 0.8;
+  padding-bottom: 8px;
 }
 
 .companylogo:hover {
   opacity: 1;
+}
+
+.glu_logo {
+  height: 75px;
+}
+
+.inline-title {
+  display: inline-block;
+  font-size: 2em;
+  margin-left: 20px;
 }
 
 #experience .description {

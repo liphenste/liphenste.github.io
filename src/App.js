@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { HashRouter, Route, Link } from "react-router-dom";
 import chess_cli_demo from './img/chess_cli_demo.gif';
 import bpm_calculator_demo from './img/bpm_calculator_demo.gif';
+import glu_logo from './img/glu_logo.png';
 import syngli_logo from './img/syngli_logo.png';
 import neuroblot_logo from './img/neuroblot_logo.png';
 import $ from 'jquery';
@@ -55,70 +56,87 @@ function Header(props) {
 }
 
 
+
+
 function About(props) {
   return (
     <div className="About section container-fluid" id="about">
-      <div className="row d-flex align-items-center">
+      <div className="row d-flex">
         <h2 className="sectionheader col-lg-3 col-md-12">'about':</h2>
         <div className="sectioncontent col-lg-9 col-md-12">
           <p className="description">
-            <b>I'm a problem solver to the core.</b> From optimizing runtime efficieny on LeetCode problems,
-            to solving daily chess puzzles, to organizing the clothes in my room--I solve problems
-            in every aspect of my life, and I'm basking in every minute of it.
+            <i>(I'm currently seeking <b> Spring/Summer 2020 software development internship</b> opportunities 👀)</i>
           </p>
           <p className="description">
-            I'm a 2nd year Computer Science student at the University of Waterloo, and am
-            currently looking for <b> Fall 2019 software development internship opportunities.</b>
+            Hey there! I'm Stephen, a passionate software engineer with well-rounded industry experience
+            in backend, infrastructure, web, iOS and game development. I enjoy addressing difficulties in software
+            design and architecture, working towards automated, scalable, performant, and affordable solutions.
           </p>
-          <div className="hobbies" id="hobbies">
-            <p className="description">Some hobbies I enjoy:</p>
-            <ul className="hobbieslist">
-              <li className="icon"><i className="fas fa-chess"></i></li>
-              <li className="icon"><i className="fas fa-basketball-ball"></i></li>
-              <li className="icon"><i className="fas fa-biking"></i></li>
-            </ul>
-          </div>
+          <p className="description">
+            <b>I'm a problem solver to the core.</b> From tackling real software challenges in the industry, to
+            optimizing runtime efficieny on LeetCode problems, to solving daily chess puzzles during my
+            commute--I solve problems in every aspect of my life, and I'm basking in every minute of it.
+          </p>
+          <p className="description">
+            These days, my interests include Poker, Mahjong, and Magic the Gathering. What's fascinating me is the
+            deep complexity behind using probability and combinatorics to derive mathematically optimal strategies.
+            Beyond over-the-table strategy games, I also enjoy biking, basketball, and dance.
+          </p>
         </div>
       </div>
     </div>
   );
 }
 
-
+// props.logoClasses is optional here
 function Internship(props) {
   return (
     <div className="Internship">
       <a href={props.link} target="_blank" rel="noopener noreferrer">
-        <img className="companylogo" src={props.logo} alt={props.alt}></img>
+        <img className={`companylogo${props.logoClasses ? ' ' + props.logoClasses : ''}`}
+             src={props.logo}
+             alt={props.alt}></img>
       </a>
-      {props.description}
+      <h3 className="inline-title">{props.title}</h3><p className="date">{props.date}</p>
+      <div className="description">{props.description}</div>
     </div>
   )
 }
 
 
 function Experience(props) {
+  const gluDescription =
+      `Design and development of a large-scale PHP REST API;
+      leveraged Docker and Kubernetes for deployment configuration and management;
+      built React components for data visualization, A/B groups and user management tools.`;
   const syngliDescription =
-    <div className="description">
-      Node.js, Express.js, jQuery, PHP, MySQL
-    </div>;
+      `Independently built Node.js real-time chat service on top of PHP application;
+      enhanced UI/UX of tutoring software through refactoring improvements to PHP/JavaScript codebase.`;
   const neuroblotDescription =
-    <div className="description">
-      iOS, Objective-C, Firebase
-    </div>;
+      `Researched and developed new features in Objective-C for tablet-based cognitive quiz platform.`;
 
   return (
     <div className="Experience section container-fluid" id="experience">
-      <div className="row d-flex align-items-center">
-        <h2 className="sectionheader col-lg-3 col-md-12">'experience':</h2>
-        <div className="sectioncontent col-lg-9 col-md-12">
+      <div className="row d-flex">
+        <h2 className="sectionheader col-lg-4 col-md-12">'experience':</h2>
+        <div className="sectioncontent col-lg-8 col-md-12">
+          <Internship title="Glu Mobile"
+                      date="Sept - Dec 2019"
+                      link="https://www.glu.com/"
+                      logo={glu_logo}
+                      alt="Glu Logo"
+                      description={gluDescription}
+                      logoClasses="glu_logo"
+          />
           <Internship title="Syngli"
+                      date="May - Aug 2019"
                       link="https://syngli.com/"
                       logo={syngli_logo}
                       alt="Syngli Logo"
                       description={syngliDescription}
           />
           <Internship title="NeuroBlot"
+                      date="May - Aug 2018"
                       link="http://neuroblot.com/"
                       logo={neuroblot_logo}
                       alt="NeuroBlot Logo"
@@ -151,7 +169,7 @@ function Projects(props) {
   const bpmCalcDescription = "angularJS widget that calculates bpm based on rate of user input"
   return (
     <div className="Projects section container-fluid" id="projects">
-      <div className="row d-flex align-items-center">
+      <div className="row d-flex">
         <h2 className="sectionheader col-lg-3 col-md-12">'projects':</h2>
         <div className="sectioncontent col-lg-9 col-md-12">
           <Project title="cli_chess"
