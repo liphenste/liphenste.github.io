@@ -2,6 +2,9 @@ import React, { useEffect } from 'react';
 import { HashRouter, Route, Link } from "react-router-dom";
 import chess_cli_demo from './img/chess_cli_demo.gif';
 import bpm_calculator_demo from './img/bpm_calculator_demo.gif';
+import zynga_logo from './img/zynga_logo.jpg';
+import sobol_logo from './img/sobol_logo.png';
+import fundthrough_logo from './img/fundthrough_logo.svg';
 import glu_logo from './img/glu_logo.png';
 import syngli_logo from './img/syngli_logo.png';
 import neuroblot_logo from './img/neuroblot_logo.png';
@@ -65,7 +68,7 @@ function About(props) {
         <h2 className="sectionheader col-lg-3 col-md-12">'about':</h2>
         <div className="sectioncontent col-lg-9 col-md-12">
           <p className="description">
-            <i>(I'm currently seeking <b> Spring/Summer 2020 software development internship</b> opportunities 👀)</i>
+            <b>I'm currently actively seeking Summer 2022 software engineering new grad opportunities! 👀</b>
           </p>
           <p className="description">
             Hey there! I'm Stephen, a passionate software engineer with well-rounded industry experience
@@ -74,13 +77,13 @@ function About(props) {
           </p>
           <p className="description">
             <b>I'm a problem solver to the core.</b> From tackling real software challenges in the industry, to
-            optimizing runtime efficieny on LeetCode problems, to solving daily chess puzzles during my
-            commute--I solve problems in every aspect of my life, and I'm basking in every minute of it.
+            optimizing runtime efficieny on LeetCode problems, to solving chess puzzles during my
+            morning ritual--I solve problems in every aspect of my life, and I'm basking in every minute of it.
           </p>
           <p className="description">
-            These days, my interests include Poker, Mahjong, and Magic the Gathering. What's fascinating me is the
+            These days, my interests include Poker, Chess, Mahjong, and Magic the Gathering. What's fascinating me is the
             deep complexity behind using probability and combinatorics to derive mathematically optimal strategies.
-            Beyond over-the-table strategy games, I also enjoy biking, basketball, and dance.
+            Beyond over-the-table strategy games, I also enjoy rock climbing, basketball, and classical/jazz.
           </p>
         </div>
       </div>
@@ -105,6 +108,15 @@ function Internship(props) {
 
 
 function Experience(props) {
+  const zyngaDescription = 
+      `Worked on rewrite of an in-game realtime notifications service using Golang, gRPC/Protobuf, and Apache Kafka;
+      led the development of an internal image selection tool using ASP.NET Razor Pages.`;
+  const sobolDescription = 
+      `Developed and expanded product management tools (i.e. Kanban board, org chart) in a MERN stack;
+      architected a Microsoft Teams bot integration with Node.js to strengthen platform accessibility for large enterprise clients.`;
+  const fundthroughDescription = 
+      `Automated data migrations from third parties into AWS architecture using pub/sub techniques with Ruby on Rails;
+      built consumer-facing login/sign-up flows with best-practice designs using React/Redux and AWS Amplify.`;
   const gluDescription =
       `Design and development of a large-scale PHP REST API;
       leveraged Docker and Kubernetes for deployment configuration and management;
@@ -120,6 +132,27 @@ function Experience(props) {
       <div className="row d-flex">
         <h2 className="sectionheader col-lg-4 col-md-12">'experience':</h2>
         <div className="sectioncontent col-lg-8 col-md-12">
+          <Internship title="Zynga"
+                      date="May - Aug 2021"
+                      link="https://www.zynga.com/"
+                      logo={zynga_logo}
+                      alt="Zynga Logo"
+                      description={zyngaDescription}
+          />
+          <Internship title="ConsenSys (sobol.io)"
+                      date="Jan - Apr 2021"
+                      link="https://www.sobol.io/"
+                      logo={sobol_logo}
+                      alt="Sobol Logo"
+                      description={sobolDescription}
+          />
+          <Internship title="FundThrough"
+                      date="May - Aug 2020"
+                      link="https://www.fundthrough.com/"
+                      logo={fundthrough_logo}
+                      alt="FundThrough Logo"
+                      description={fundthroughDescription}
+          />
           <Internship title="Glu Mobile"
                       date="Sept - Dec 2019"
                       link="https://www.glu.com/"
@@ -229,7 +262,7 @@ function Contact(props) {
 
 function Footer(props) {
   return (
-    <div className="footer" id="footer">© 2019 Stephen Li</div>
+    <div className="footer" id="footer">© 2021 Stephen Li</div>
   );
 }
 

@@ -137,6 +137,7 @@ a {
 
 .demo {
   width: 60%;
+  max-width: 500px;
   height: auto;
   border: 2px dashed #465d7a;
   border-radius: 2%;
