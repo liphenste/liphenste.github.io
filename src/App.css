@@ -110,6 +110,10 @@
   height: 75px;
 }
 
+.faire_logo {
+  height: 35px;
+}
+
 .inline-title {
   display: inline-block;
   font-size: 2em;

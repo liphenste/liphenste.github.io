@@ -1,14 +1,13 @@
-import React, { useEffect } from 'react';
-import { HashRouter, Route, Link } from "react-router-dom";
+import React from 'react';
 import chess_cli_demo from './img/chess_cli_demo.gif';
 import bpm_calculator_demo from './img/bpm_calculator_demo.gif';
+import faire_logo from './img/faire_logo.svg';
 import zynga_logo from './img/zynga_logo.jpg';
 import sobol_logo from './img/sobol_logo.png';
 import fundthrough_logo from './img/fundthrough_logo.svg';
 import glu_logo from './img/glu_logo.png';
 import syngli_logo from './img/syngli_logo.png';
 import neuroblot_logo from './img/neuroblot_logo.png';
-import $ from 'jquery';
 import './App.css';
 
 
@@ -68,7 +67,7 @@ function About(props) {
         <h2 className="sectionheader col-lg-3 col-md-12">'about':</h2>
         <div className="sectioncontent col-lg-9 col-md-12">
           <p className="description">
-            <b>I'm currently actively seeking Summer 2022 software engineering new grad opportunities! 👀</b>
+            <b>(As of January 2024) I'm currently actively seeking mid-level software engineering opportunities.</b>
           </p>
           <p className="description">
             Hey there! I'm Stephen, a passionate software engineer with well-rounded industry experience
@@ -108,6 +107,12 @@ function Internship(props) {
 
 
 function Experience(props) {
+  const faireDescription =
+      <p>
+        Rewrote the <a href="https://apps.shopify.com/faire-buy-wholesale" target="_blank" rel="noopener noreferrer">Faire: Buy Wholesale</a> Shopify app,
+        improving capabilities and boosting user reviews;
+        led a project to improve the identity verification process for seamless retailer onboarding.
+      </p>
   const zyngaDescription = 
       `Worked on rewrite of an in-game realtime notifications service using Golang, gRPC/Protobuf, and Apache Kafka;
       led the development of an internal image selection tool using ASP.NET Razor Pages.`;
@@ -132,6 +137,14 @@ function Experience(props) {
       <div className="row d-flex">
         <h2 className="sectionheader col-lg-4 col-md-12">'experience':</h2>
         <div className="sectioncontent col-lg-8 col-md-12">
+          <Internship title="Faire"
+                      date="Aug 2022 - Nov 2023"
+                      link="https://www.faire.com/"
+                      logo={faire_logo}
+                      alt="Faire Logo"
+                      description={faireDescription}
+                      logoClasses="faire_logo"
+          />
           <Internship title="Zynga"
                       date="May - Aug 2021"
                       link="https://www.zynga.com/"
@@ -262,7 +275,7 @@ function Contact(props) {
 
 function Footer(props) {
   return (
-    <div className="footer" id="footer">© 2021 Stephen Li</div>
+    <div className="footer" id="footer">© 2024 Stephen Li</div>
   );
 }
 
