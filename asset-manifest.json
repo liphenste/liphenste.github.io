@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/react/static/css/main.a78a0d2b.css",
-    "main.js": "/react/static/js/main.2c11f6e5.js",
-    "static/media/bpm_calculator_demo.gif": "/react/static/media/bpm_calculator_demo.3f45b440c7150a81cbc7.gif",
-    "static/media/chess_cli_demo.gif": "/react/static/media/chess_cli_demo.1efc48fdc7b20b116c9f.gif",
-    "static/media/neuroblot_logo.png": "/react/static/media/neuroblot_logo.df5f35075a396ab5f50f.png",
-    "static/media/zynga_logo.jpg": "/react/static/media/zynga_logo.7a579a0a40e0da458078.jpg",
-    "static/media/faire_logo.svg": "/react/static/media/faire_logo.84078165687e75605206d76e2b5dcb47.svg",
-    "static/media/glu_logo.png": "/react/static/media/glu_logo.551b7f3d6555352b2fc4.png",
-    "index.html": "/react/index.html",
-    "static/media/fundthrough_logo.svg": "/react/static/media/fundthrough_logo.b921c038861d3c56d976b82fefa270d5.svg",
-    "main.a78a0d2b.css.map": "/react/static/css/main.a78a0d2b.css.map",
-    "main.2c11f6e5.js.map": "/react/static/js/main.2c11f6e5.js.map"
+    "main.css": "/static/css/main.a78a0d2b.css",
+    "main.js": "/static/js/main.10508065.js",
+    "static/media/bpm_calculator_demo.gif": "/static/media/bpm_calculator_demo.3f45b440c7150a81cbc7.gif",
+    "static/media/chess_cli_demo.gif": "/static/media/chess_cli_demo.1efc48fdc7b20b116c9f.gif",
+    "static/media/neuroblot_logo.png": "/static/media/neuroblot_logo.df5f35075a396ab5f50f.png",
+    "static/media/zynga_logo.jpg": "/static/media/zynga_logo.7a579a0a40e0da458078.jpg",
+    "static/media/faire_logo.svg": "/static/media/faire_logo.84078165687e75605206d76e2b5dcb47.svg",
+    "static/media/glu_logo.png": "/static/media/glu_logo.551b7f3d6555352b2fc4.png",
+    "index.html": "/index.html",
+    "static/media/fundthrough_logo.svg": "/static/media/fundthrough_logo.b921c038861d3c56d976b82fefa270d5.svg",
+    "main.a78a0d2b.css.map": "/static/css/main.a78a0d2b.css.map",
+    "main.10508065.js.map": "/static/js/main.10508065.js.map"
   },
   "entrypoints": [
     "static/css/main.a78a0d2b.css",
-    "static/js/main.2c11f6e5.js"
+    "static/js/main.10508065.js"
   ]
 }
